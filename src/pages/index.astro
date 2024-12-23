@@ -60,3 +60,18 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
     <BlogTagsLink heading="Categories" tags={tags} />
   </div>
 </Layout>
+
+
+<style>
+  .article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+  }
+  @media (max-width: 920px) {
+    .aticle {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
